@@ -1,0 +1,414 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+html {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+
+/* HEADER */
+#header{
+    position: fixed;
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav , .subnav{
+    list-style-type: none;
+}
+
+#header #nav{
+    display: inline-block;
+}
+
+#nav >li{
+    display: inline-block;
+    position: relative;
+}
+#nav > li > a{
+    color: #fff;
+}
+
+
+#nav li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav >li:hover >a{
+    color: #000;
+    background-color: #ccc;
+}
+
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav a{
+    color: #000;
+    text-decoration: none;
+    padding: 0 16px;
+    line-height: 38px;
+    min-width: 160px;
+}
+
+
+
+#nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+
+#header .search-btn{
+    float: right;
+    color: #fff;
+    width: 62px;
+    height: 46px;
+    display: flex;
+}
+
+.search-btn .search-icon{
+    /* display: flex; */
+    margin: auto;
+    font-size: 14px;
+}
+
+.search-btn:hover{
+    background-color: #F44336;
+    cursor: pointer;
+}
+
+
+/* SLIDER */
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(https://www.w3schools.com/w3images/chicago.jpg) top center /cover no-repeat ;
+
+}
+
+
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    /* cách căn giữa */     
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%); 
+
+}
+.text-heading{
+    font-size: 24px;
+    font-weight: 500;
+}
+.text-description{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+
+/* Content */
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading{
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin: 10px 0;
+}
+#content .section-sub-heading{
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    margin: 15px 0;
+    color: #757575;
+}
+
+#content .about-text{
+    text-align: justify;
+    margin: 15px 0;
+    font-family: "Lato", sans-serif;
+}
+
+#content .member-list{
+    margin-top: 47px;
+    overflow: hidden;
+}
+
+#content .member-item{
+    float: left;
+    width: 33,3333%;
+    text-align: center;
+
+}
+
+
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-img{
+    width: 60%;
+    margin-top: 15px;
+    border-radius: 4px;
+    /* width: 154px; */
+}
+
+/* Tour section */
+
+.tour-section{
+    background-color: #000;
+    color: #fff;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ticket-section{
+    display: flex;
+}
+
+.ticket-list{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 766px;
+    margin: auto;
+}
+
+.ticket-item{
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    padding: 8px 16px;
+    list-style: none;
+}
+
+.tag{
+    background-color: #F44336;
+    color: #fff;
+    padding: 0 8px;
+    margin-left: 16px;
+    text-align: center;
+}
+
+.three{
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    float: right;
+    text-align: center;
+    width: 25px;
+}
+
+
+
+/* Location */
+.location-section{
+    width: 782px;
+    background-color: #000;
+    display: flex;
+    margin: 32px auto;
+}
+
+.location-item{
+    width: calc(100%/3);
+    float: left;
+    margin: 0 8px;
+    background-color: #fff;
+}
+.location-img{
+    width: 100%;
+}
+
+.location-heading{
+    color: #000;
+    padding: 0 16px;
+    font-size: 15px;
+    margin: 15px 0;
+}
+.location-sub-heading{
+    color: #757575;
+    padding: 0 16px;
+    margin: 15px 0;
+}
+.location-description{
+    color: #000;
+    padding: 0 16px;
+    margin: 15px 0;
+}
+
+.buy-ticket{
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 16px;
+    margin-left: 15px;
+    border: 0px;
+}
+
+.buy-ticket:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+/* Contact */
+
+.contact-section{
+    max-width: 800px;
+    background-color: #fff;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-heading{
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin: 10px 0;
+}
+.contact-sub-heading{
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    margin: 15px 0;
+    color: #757575;
+    opacity: 0.6;
+}
+
+.contact-information{
+    display: flex;
+    padding: 32px 0;
+}
+
+.contact-information-right{
+    width: 50%;
+    height: 160px;
+    font-size: 18px;
+    padding: 0 32px;
+}
+
+.contact-information-left{
+    width: 50%;
+    height: 160px;
+    padding: 0 32px;
+    position: relative;
+    display: flex;
+}
+
+.information-fill{
+    margin: 0 -16px 8px -16px;
+    padding: 0 8px;
+    display: flex;
+    width: 416px;
+}
+
+.name-information,
+.email-information{
+    width: 50%;
+    padding: 0 8px;
+    flex: 1;
+}
+
+.name-information-fill,
+.message-information-fill{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+.send-btn{
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    margin: 16px 0;
+    position: absolute;
+    bottom: 30px;
+    right: -32px;
+}
+
+.send-btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#footer{
+    display: flex;
+    padding: 72px 0;
+    height: 190px;
+}
+
+.footer-container{
+    margin: auto;
+    padding: 64px 16px;
+}
+
+.footer-icon{
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    color: #656565;
+}
+
+
+.footer-description{
+    font-size: 15px;
+    color: #757575;
+    text-align: center;
+}
+
+.footer-link{
+    font-size: 15px;
+    color: #757575;
+}
